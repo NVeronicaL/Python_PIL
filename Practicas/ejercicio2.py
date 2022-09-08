@@ -9,19 +9,19 @@ while True:
         n2 = int(input("Segundo número: "))
 
         if n1 > n2:
-            print("El primer numero debe ser menor que el segundo\n")
-            print("Continuar?: SI o NO\n")
+            print("\n❌ El primer numero debe ser menor que el segundo\n")
+            print("Ingresar nuevamente los números?: SI o NO\n")
             respuesta = input().upper()
             
+            if respuesta == 'NO':
+                break
             if respuesta != 'SI':
+                print("\n❌ Solo admite como respuesta SI o NO\n")
                 break
         else: 
             for i in range(n1,n2 +1 ):
                 if i % 2 == 0:
-                    print(i)        
+                    print(i)
+            break        
     except ValueError as e:
-        print("Debe ingresar un numeros entero")
-        print("ValueError : ", e)
-
-
-    
+        print("\n❌ Error : Debe ingresar un numeros entero\n")
