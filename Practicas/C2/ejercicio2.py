@@ -24,4 +24,4 @@ while True:
                     print(i)
             break        
     except ValueError as e:
-        print("\n❌ Error : Debe ingresar un numeros entero\n")
+        print("\n❌ Error : Debe ingresar un numero entero\n")
